@@ -1,7 +1,6 @@
-node_modules
-block.js
-gulpfile.js
-package-lock.json
-package.json
 .DS_Store
-
+node_modules
+gulpfile.js
+block.js
+package.json
+package-lock.json

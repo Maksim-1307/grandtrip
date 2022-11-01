@@ -1,0 +1,24 @@
+.button{
+    display: inline-block;
+    padding: 12px 14px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background: $color1;
+    border-radius: 10px;
+    transition: .5s;
+    text-decoration: none !important;
+
+    &--small{
+        padding: 8px 10px;
+        &:hover {
+            padding: 5px 8px !important;
+        }
+    }
+    &:hover{
+        border: 3px solid #4356FF;
+        background: transparent;
+        color: black;
+        padding: 9px 11px;
+    }
+}

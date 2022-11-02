@@ -1,6 +1,14 @@
 section.top-section
     .container
-        p some content
+        .top-section__content
+            h1 Добро пожалоавть в 
+                span.logo GRANDTRIP
+            p Готовые идеи для Вашей прогулки
+            .top-section__buttons
+                a.button(href="roads.html") найти маршрут!
+                a.button.top-section__watch-compilation(href="roads.html") 
+                    img(src="img/icons/youtube.svg") 
+                    span Смотреть подборку
         .top-section__background
             .top-section__images
                 .top-section__images-container
@@ -24,3 +32,5 @@ section.top-section
                         img.top-section__bg-img(src="img/image 3.jpg")
                         img.top-section__bg-img(src="img/image 2.jpg")
                         img.top-section__bg-img(src="img/image 1.jpg")
+    a.top-section__scroll-button(href="")
+        img(src="img/icons/arrow.svg", alt="")

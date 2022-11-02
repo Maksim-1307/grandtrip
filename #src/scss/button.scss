@@ -21,4 +21,10 @@
         color: black;
         padding: 9px 11px;
     }
+    *{
+        display: inline-block;
+    }
+    * + *{
+        margin-left: 5px;
+    }
 }

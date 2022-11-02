@@ -1,6 +1,7 @@
 .top-section{
     overflow: hidden;
     height: 100vh;
+    max-height: 800px;
     .container{
         width: 950px;
         position: relative;
@@ -45,11 +46,11 @@
     }
 
 
-
     //background images
     .line {
         display: inline-flex;
         position: relative;
+        transition: .1s;
 
         img+img {
             margin-left: 20px;

@@ -9,3 +9,7 @@ body{
     width: $container-width1;
     margin: 0 auto;
 }
+section{
+    position: relative;
+    overflow: hidden;
+}

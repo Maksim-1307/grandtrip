@@ -2,4 +2,11 @@
     --a: 0%;
     position: absolute;
     border-radius: 50%;
+    z-index: -1;
+    &--color1{
+        background: radial-gradient(50% 50% at 50% 50%, rgba(67, 86, 255, 0.3) var(--a), rgba(67, 86, 255, 0) 100%);
+    }
+    &--color2 {
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 198, 88, 0.6) var(--a), rgba(255, 198, 88, 0) 100%);
+    }
 }

@@ -1,5 +1,6 @@
 var textpath = document.querySelector("#text-path");
 var textcontainer = document.querySelector("#text-container")
+var boddy = document.querySelector("body")
 
 var scrollSelf = textcontainer.scrollTop + 800;
 

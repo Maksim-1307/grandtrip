@@ -14,7 +14,15 @@ section{
     position: relative;
     overflow: hidden;
 }
+h1, h2, h3{
+    font-weight: 800;
+}
 h1{
     font-size: 60px;
-    font-weight: 800;
+}
+h2{
+    font-size: 35px;
+}
+p{
+    opacity: 80%;
 }

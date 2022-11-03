@@ -1,0 +1,71 @@
+.steps-section{
+    background: url('img/steps-section-bg.png'), $bg1-color;
+    background-repeat: no-repeat;
+    background-position: calc(100% / 2 - 20px) 0;
+    background-size: auto;
+    padding: 56px 0 180px 0;
+    min-width: 1010px;
+    .container{
+        width: 1010px;
+        position: relative;
+    }
+    .step{
+        z-index: 1;
+        max-width: 450px;
+        min-height: 167px;
+        padding: 20px;
+        border-radius: 30px 30px 30px 0;
+        background: white;
+        box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.2);
+        &__title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        &__num{
+            border-radius: 50%;
+            background: black;
+            color: white;
+            line-height: 50px;
+            width: 50px;
+            min-width: 50px;
+            display: inline-block;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 800;
+        }
+    }
+    &__element{
+        display: flex;
+        &:nth-child(odd){
+            justify-content: flex-end;
+        }
+        &:nth-child(even) {
+            div{
+                border-radius: 30px 30px 0 30px;
+                text-align: right;
+            }
+            .step__title{
+                flex-direction: row-reverse;
+            }
+        }
+        & + &{
+            margin-top: 31px;
+        }
+    }
+    .circle{
+        width: 300px;
+        height: 300px;
+        z-index: 0;
+        position: absolute;
+    }
+    .circle--color1{
+        right: -70px;
+        bottom: -130px;
+    }
+    .circle--color2 {
+        top: 50px;
+        left: -100px;
+    }
+}

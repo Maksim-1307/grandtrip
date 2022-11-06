@@ -1,0 +1,23 @@
+.field{
+    display: inline-block;
+    width: 300px;
+    font-size: 20px;
+    line-height: 44px;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-family: 'Bitter', sans-serif;
+    .default{
+        background: green !important;
+        color: red !important;
+    }
+    &:placeholder{
+        font-size: 20px;
+        line-height: 44px;
+    }
+    &:focus{
+        border: 3px solid black;
+    }
+}
+select.field{
+    background: url('img/icons/small-arrow.svg') no-repeat center right 10px;
+}

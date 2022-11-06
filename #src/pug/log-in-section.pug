@@ -6,9 +6,31 @@ mixin log-in(is_registration)
                     return Регистрация 
                 else 
                     return Вход
-            span.log-in-section__subtitle
+            .log-in-section__subtitle
                 if is_registration 
                     return Уже есть аккаунт? 
                         a(href="login.html").link Войти
                 else 
                     return Вход
+            .log-in-section__fields
+                form(action="") 
+                    .log-in-section__fields
+                        input(type="text" placeholder="Имя пользователя").field
+                        input(type="text" placeholder="Имя пользователя").field
+                        select.field
+                            option(selected disabled value="default") выбрать вариант
+                            option(value="1") вариант 1
+                            option(value="2") вариант 2
+                            option(value="3") вариант 3
+                            option(value="4") вариант 4
+                        input(type="text" placeholder="Имя пользователя").field
+                        input(type="text" placeholder="Имя пользователя").field
+                        select.field
+                            option(selected disabled value="default") выбрать вариант
+                            option(value="1") вариант 1
+                            option(value="2") вариант 2
+                            option(value="3") вариант 3
+                            option(value="4") вариант 4
+                    button(type="submit").log-in-section__button.button далее
+                    
+

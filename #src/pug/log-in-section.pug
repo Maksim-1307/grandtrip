@@ -1,0 +1,14 @@
+mixin log-in(is_registration)
+    section.log-in-section
+        .container
+            h2 
+                if is_registration 
+                    return Регистрация 
+                else 
+                    return Вход
+            span.log-in-section__subtitle
+                if is_registration 
+                    return Уже есть аккаунт? 
+                        a(href="login.html").link Войти
+                else 
+                    return Вход

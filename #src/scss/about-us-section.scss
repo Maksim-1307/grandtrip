@@ -1,0 +1,25 @@
+.about-us-section{
+    padding: 100px 0 60px 0;
+    .circle {
+        width: 160px;
+        height: 160px;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text{
+        margin-left: 80px;
+    }
+    &__image{
+        min-width: 260px;
+        min-height: 230px;
+        position: relative;
+    }
+    &__kai-logo{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}

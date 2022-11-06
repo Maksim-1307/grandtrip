@@ -1,0 +1,16 @@
+.ideas-section{
+    padding: 60px 0;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        div + div{
+            margin-left: 60px;
+        }
+    }
+    &__image img{
+        object-fit: cover;
+        height: 259px;
+        width: 203px;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700;800&family=Fira+Sans+Condensed:wght@800&family=Neucha&display=swap" rel="stylesheet">
+    <title>Готовые идеи для Вашей прогулки в GrandTrip!</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container"><a class="logo header__logo" href="index.html">GRANDTRIP</a>
+        <div class="header__list"><a href="roads.html">Маршруты</a><a href="support.html">Поддержка</a><a href="personal-area.html">Личный кабинет</a><a class="button header__button button--small" href="log-in.html">войти</a></div>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <div class="sidebar__content">
+        <button class="sidebar__close-button"> <img src="img/icons/small-arrow.svg"><span>Скрыть меню</span></button>
+        <div class="sidebar__title">Поиск по параметрам</div>
+        <div class="sidebar__list">
+          <form class="sidebar__fields">
+            <select class="field field--small">
+              <option selected disabled value="default">Время года</option>
+              <option value="1">Весна</option>
+              <option value="2">Зима</option>
+              <option value="3">Осень</option>
+              <option value="4">Лето</option>
+            </select>
+            <select class="field field--small">
+              <option selected value="default">Все тематики</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <select class="field field--small">
+              <option selected disabled value="default">Длительность прогулки</option>
+              <option value="1">30 минут</option>
+              <option value="2">1 час</option>
+              <option value="3">1.5 часа</option>
+              <option value="4">2 часа и больше</option>
+            </select>
+            <button class="button button--small">искать</button>
+          </form>
+        </div>
+      </div>
+      <button class="button">создайте свой маршрут</button>
+    </aside>
+    <div class="roads-page-map"></div>
+  </body>
+</html>

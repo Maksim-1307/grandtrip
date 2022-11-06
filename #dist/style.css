@@ -585,6 +585,9 @@ form {
   padding-left: 10px;
   border-radius: 10px;
   font-family: "Bitter", sans-serif;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 .field .default {
   background: green !important;
@@ -596,6 +599,21 @@ form {
 }
 .field:focus {
   border: 3px solid black;
+}
+.field:hover::-webkit-input-placeholder {
+  color: #000;
+}
+.field:hover::-moz-placeholder {
+  color: #000;
+}
+.field:hover:-ms-input-placeholder {
+  color: #000;
+}
+.field:hover::-ms-input-placeholder {
+  color: #000;
+}
+.field:hover::placeholder {
+  color: #000;
 }
 
 select.field {
@@ -674,4 +692,78 @@ select.field {
 }
 .footer__note:hover {
   text-decoration: none;
+}
+
+.roads-page-map {
+  width: 100vw;
+  height: 100vh;
+  background: url(img/map.jpg);
+  background-size: cover;
+}
+
+.sidebar {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  top: 70px;
+  height: calc(100% - 70px);
+  background: rgba(216, 216, 216, 0.7);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  width: 310px;
+  font-size: 16px;
+}
+.sidebar .field {
+  background-color: white;
+  width: 100%;
+}
+.sidebar__title {
+  font-weight: 800;
+  font-size: 35px;
+}
+.sidebar--closed {
+  left: -310px;
+}
+.sidebar__list {
+  margin-top: 16px;
+  overflow: scroll;
+}
+.sidebar__list * + * {
+  margin-top: 10px;
+}
+.sidebar__close-button {
+  font-size: 16px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+.sidebar__close-button img {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin-right: 10px;
+}
+.sidebar select {
+  color: rgba(0, 0, 0, 0.6);
 }

@@ -6,6 +6,7 @@
     padding-left: 10px;
     border-radius: 10px;
     font-family: 'Bitter', sans-serif;
+    transition: .5s;
     .default{
         background: green !important;
         color: red !important;
@@ -16,6 +17,9 @@
     }
     &:focus{
         border: 3px solid black;
+    }
+    &:hover::placeholder{
+        color: #000;
     }
 }
 select.field{

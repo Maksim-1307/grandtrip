@@ -1,0 +1,17 @@
+doctype html
+html(lang='ru')
+    head
+        include pug/head.pug
+        style(type="text/css").
+            .log-in-section{
+                padding: 170px 0 150px 0;
+            }
+    body
+        
+        include pug/header.pug
+
+        include pug/log-in-section.pug
+        +log-in(false)
+
+        include pug/footer.pug
+

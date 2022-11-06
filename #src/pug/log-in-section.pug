@@ -9,9 +9,10 @@ mixin log-in(is_registration)
             .log-in-section__subtitle
                 if is_registration 
                     return Уже есть аккаунт? 
-                        a(href="login.html").link Войти
+                        a(href="log-in.html").link Войти
                 else 
-                    return Вход
+                    return Еще нет аккаунта? 
+                        a(href="registration.html").link Регистрация
             .log-in-section__fields
                 form(action="") 
                     .log-in-section__fields

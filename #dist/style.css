@@ -166,6 +166,12 @@ form {
 .button--small:hover {
   padding: 5px 8px !important;
 }
+.button--bordered {
+  border: 3px solid #4356FF;
+  background: transparent;
+  color: black;
+  padding: 9px 11px;
+}
 .button:hover {
   border: 3px solid #4356FF;
   background: transparent;
@@ -727,6 +733,7 @@ select.field {
   backdrop-filter: blur(10px);
   width: 310px;
   font-size: 16px;
+  max-height: 100vh;
 }
 .sidebar .field {
   background-color: white;
@@ -739,11 +746,16 @@ select.field {
 .sidebar--closed {
   left: -310px;
 }
-.sidebar__list {
+.sidebar__content {
+  overflow: scroll;
+  margin-bottom: 10px;
+}
+.sidebar__fields {
   margin-top: 16px;
   overflow: scroll;
+  max-height: 100%;
 }
-.sidebar__list * + * {
+.sidebar__fields * + * {
   margin-top: 10px;
 }
 .sidebar__close-button {

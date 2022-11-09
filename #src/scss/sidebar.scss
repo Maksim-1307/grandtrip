@@ -13,6 +13,7 @@
     backdrop-filter: blur(10px);
     width: $sidebar-width;
     font-size: 16px;
+    max-height: 100vh;
     .field{
         background-color: white;
         width: 100%;
@@ -24,10 +25,15 @@
     &--closed{
         left: calc($sidebar-width * -1);
     }
-    &__list{
+    &__content{
+        overflow: scroll;
+        margin-bottom: 10px;
+    }
+    &__fields{
         margin-top: 16px;
         overflow: scroll;
-        * + *{
+        max-height: 100%;
+        *+* {
             margin-top: 10px;
         }
     }

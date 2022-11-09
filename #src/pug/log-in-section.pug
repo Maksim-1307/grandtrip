@@ -3,16 +3,16 @@ mixin log-in(is_registration)
         .container
             h2 
                 if is_registration 
-                    return Регистрация 
+                    | Регистрация 
                 else 
-                    return Вход
+                    | Вход
             .log-in-section__subtitle
                 if is_registration 
-                    return Уже есть аккаунт? 
-                        a(href="log-in.html").link Войти
+                    | Уже есть аккаунт? 
+                    a(href="log-in.html").link Войти
                 else 
-                    return Еще нет аккаунта? 
-                        a(href="registration.html").link Регистрация
+                    | Еще нет аккаунта? 
+                    a(href="registration.html").link Регистрация
             .log-in-section__fields
                 form(action="") 
                     .log-in-section__fields

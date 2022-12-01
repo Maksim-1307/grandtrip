@@ -5,25 +5,25 @@ aside.sidebar
             span Скрыть меню
         .sidebar__title Поиск по параметрам
         .sidebar__list
-            form.sidebar__fields
-                select.field.field--small
+            form.sidebar__field
+                select.field.field--small.sidebar__element
                     option(selected disabled value="default") Время года
                     option(value="1") Весна
                     option(value="2") Зима
                     option(value="3") Осень
                     option(value="4") Лето
-                select.field.field--small
+                select.field.field--small.sidebar__element
                     option(selected value="default") Все тематики
                     option(value="1") 1
                     option(value="2") 2
                     option(value="3") 3
                     option(value="4") 4
-                select.field.field--small
+                select.field.field--small.sidebar__element
                     option(selected disabled value="default") Длительность прогулки
                     option(value="1") 30 минут
                     option(value="2") 1 час
                     option(value="3") 1.5 часа
                     option(value="4") 2 часа и больше
-                button.button.button--small искать
-    button.button.button--bordered создайте свой маршрут
+                button.button.button--small.sidebar__element искать
+        button.button.button--bordered.sidebar__bottom-button создайте свой маршрут
     

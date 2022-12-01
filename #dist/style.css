@@ -621,6 +621,9 @@ form {
 .field:hover::placeholder {
   color: #000;
 }
+.field--element:hover {
+  background: red !important;
+}
 
 select.field {
   background: url("img/icons/small-arrow.svg") no-repeat center right 10px;
@@ -747,15 +750,29 @@ select.field {
   left: -310px;
 }
 .sidebar__content {
-  overflow: scroll;
-  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+.sidebar__bottom-button {
+  margin-top: auto;
 }
 .sidebar__fields {
   margin-top: 16px;
-  overflow: scroll;
-  max-height: 100%;
 }
 .sidebar__fields * + * {
+  margin-top: 10px;
+}
+.sidebar__list {
+  margin: 10px 0;
+  overflow: scroll;
+}
+.sidebar__list * + * {
   margin-top: 10px;
 }
 .sidebar__close-button {
@@ -778,4 +795,9 @@ select.field {
 }
 .sidebar select {
   color: rgba(0, 0, 0, 0.6);
+}
+
+.sidebar-element {
+  display: block;
+  background: white;
 }

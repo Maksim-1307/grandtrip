@@ -21,6 +21,11 @@
     &:hover::placeholder{
         color: #000;
     }
+    &--element{
+        &:hover{
+            background: red !important;
+        }
+    }
 }
 select.field{
     background: url('img/icons/small-arrow.svg') no-repeat center right 10px;
